@@ -14,7 +14,11 @@ class App extends Component {
             databaseURL: "https://webpack-92a38.firebaseio.com",
             storageBucket: "webpack-92a38.appspot.com",
             messagingSenderId: "399018148090"
-        })
+        });
+
+        firebase.auth().onAuthStateChanged((user) => {
+            
+        });
     }
 
     render() {
